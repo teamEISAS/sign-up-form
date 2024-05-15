@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200&display=swap" rel="stylesheet">
   
   <title>Sign up form</title>
 
@@ -16,28 +19,31 @@
   </style>
 </head>
 <body>
-  <section>
-  <h1>Learn to code by watching others</h1>
-  <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable.</p> 
-  </section>
+  <div class="container">
+    <section class="section-1">
+      <h1 class="heading-text">Learn to code by <br>watching others</h1>
+      <p class="heading-description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.</p> 
+    </section>
 
-  <section>
-  <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
-
-  <form>
-
-  <input type="text" name="first-name" placeholder="First name"/>  
-  <input type="text" name="last-name"placeholder="Last name"/>
-  <input type="text" name="email" placeholder="Email adress"/>
-  <input type="text" name="password" placeholder="Password"/>
-  <input type="button" value="CLAIM YOUR TRIAL"/>
-  </form>
-  
-  <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
-  </section>
-  <footer>
-   
-  </footer>
+    <section class="section-2">
+      <div class="cta round-edges">
+        <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+      <div class="form round-edges">
+      <form>
+        <input type="text" name="first-name" placeholder="First name"/>  
+        <input type="text" name="last-name"placeholder="Last name"/>
+        <input type="text" name="email" placeholder="Email adress"/>
+        <input type="text" name="password" placeholder="Password"/>
+        <input class="submit-btn" type="button" value="CLAIM YOUR FREE TRIAL"/>
+      </form>
+      
+      <div class="terms">
+        <p>By clicking the button, you are agreeing to our <strong id="red">Terms and Services</strong></p>
+      </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
